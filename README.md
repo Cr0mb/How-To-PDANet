@@ -1,3 +1,15 @@
+## Disclaimer
+
+This tutorial is intended for educational purposes. For comprehensive information and support, please refer to the official [PDANet documentation](https://pdanet.co/).
+
+## Acknowledgment
+
+The information presented here is based on my personal knowledge and experience over the years. I’m sharing this open-source material in my own format to help others.
+
+### iPhone Compatibility
+
+Please note that PDANet does not support iPhone devices for tethering. This is due to the closed nature of iOS and its restrictions on USB tethering and third-party applications. As a result, PDANet is only compatible with Android devices.
+
 # PDANet Tutorial
 
 PDANet (Portable Data Network) is a powerful tool for tethering your device's internet connection. This tutorial will guide you through the installation and configuration process.
@@ -9,7 +21,7 @@ PDANet (Portable Data Network) is a powerful tool for tethering your device's in
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Troubleshooting](#troubleshooting)
-- [License](#license)
+- [Downloading OEM and ADB Drivers](#downloading-oem-and-adb-drivers)
 
 ## Requirements
 
@@ -17,6 +29,7 @@ PDANet (Portable Data Network) is a powerful tool for tethering your device's in
 - USB cable (for USB tethering)
 - A computer with internet access
 - A compatible operating system (Windows, macOS, Linux)
+- Correct OEM and ADB drivers for your specific phone model
 
 ## Installation
 
@@ -37,7 +50,7 @@ PDANet (Portable Data Network) is a powerful tool for tethering your device's in
    - Go back to `Settings` > `Developer options` > enable `USB debugging`.
 
 2. **Connect your device:**
-   - Use a USB cable to connect your Android device to your computer.
+   - Use a USB cable to connect your Android device to your computer. Ensure the cable supports file transfer capabilities. If your phone isn’t connecting, try using a different charger or cable.
 
 3. **Open PDANet:**
    - Launch the PDANet application on both your Android device and your computer.
@@ -68,16 +81,29 @@ PDANet (Portable Data Network) is a powerful tool for tethering your device's in
 
 - **Connection issues:**
   - Ensure USB debugging is enabled.
-  - Check that the correct PDANet mode is selected.
-  
+  - Verify that you’re using a USB cable that supports file transfer. If your phone isn’t connecting, try a different charger or cable.
+  - Make sure the correct OEM and ADB drivers are installed for your phone.
+
 - **Slow internet speed:**
   - Try disconnecting and reconnecting your device.
   - Check for background applications consuming bandwidth.
 
-## License
+## Downloading OEM and ADB Drivers
 
-This tutorial is for educational purposes. Please refer to the official [PDANet documentation](https://pdanet.co/) for further information and support.
+You can download OEM and ADB drivers from several sources:
 
-## Conclusion
+1. **Manufacturer's Website:**
+   - Most device manufacturers provide their own ADB and OEM drivers. You can find most on the android developer page.
+     - [Android](https://developer.android.com/studio/run/oem-usb)
 
-With PDANet, you can easily share your mobile internet connection with your devices. Follow this guide to set up and troubleshoot your connection effectively. Happy tethering!
+2. **Universal ADB Drivers:**
+   - A good option is the [Universal ADB Driver](https://adbdriver.com/).
+
+3. **SDK Platform Tools:**
+   - If you have Android Studio, you can get ADB drivers as part of the [SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools).
+
+### Installation Steps
+- **Download the appropriate driver.**
+- **Extract the files** (if they are in a ZIP format).
+- **Install the driver:**
+  - For Windows, connect your device via USB, open Device Manager, find your device under "Other devices" or "Android Devices," right-click, and choose "Update driver." Select "Browse my computer for driver software" and navigate to the folder where you extracted the driver.
