@@ -1,10 +1,7 @@
 # Turn Your PC into a Free Unlimited Hotspot Using Only Phone Service
 
-## Disclaimer
-This tutorial is intended for educational purposes. For comprehensive information and support, please refer to the official PDANet documentation.
-
 ## Acknowledgment
-The information presented here is based on my personal knowledge and experience over the years. I’m sharing this open-source material in my own format to help others.
+The information presented here is based on my personal knowledge and experience over the years. I’m sharing this open-source material to help others.
 
 ## iPhone Compatibility
 Please note that PDANet does not support iPhone devices for tethering. This is due to the closed nature of iOS and its restrictions on USB tethering and third-party applications. As a result, PDANet is only compatible with Android devices.
